@@ -72,12 +72,27 @@
   .sec::before{content:"";position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:160px;height:2px;background:linear-gradient(90deg,transparent,rgba(231,201,134,.7),transparent)}
   .sec.alt{background:var(--bg-alt);box-shadow:inset 0 70px 100px -70px rgba(231,201,134,.06)}
   /* мягкие свечения, чтобы блоки не сливались в черноту */
-  #help{background:radial-gradient(760px 480px at 15% -10%,rgba(231,201,134,.10),transparent 60%),var(--bg-alt)}
-  #packages{background:radial-gradient(900px 520px at 88% -8%,rgba(231,201,134,.12),transparent 62%),var(--bg)}
-  #support{background:radial-gradient(880px 520px at 12% -6%,rgba(150,120,220,.17),transparent 62%),var(--bg-alt)}
-  #about{background:radial-gradient(760px 560px at 106% 45%,rgba(231,201,134,.11),transparent 60%),var(--bg)}
-  #how{background:radial-gradient(760px 480px at 85% 115%,rgba(231,201,134,.08),transparent 60%),var(--bg)}
+  #help{background:radial-gradient(760px 480px at 15% -10%,rgba(231,201,134,.12),transparent 60%),var(--bg-alt)}
+  #support{background:radial-gradient(880px 520px at 12% -6%,rgba(150,120,220,.20),transparent 62%),var(--bg-alt)}
   .final{background:var(--bg)}
+
+  /* СВЕТЛЫЕ секции — контраст свет/тьма и читаемый текст */
+  .sec.light{
+    --ink:#2f241a; --muted:#6b5a48; --muted-2:#98866e;
+    --panel-a:#fbf6ec; --panel-b:#f2e8d6; --panel-hi:#fdf9f1;
+    --gold:#a9782f; --gold-2:#8a6120;
+    --line:rgba(120,86,40,.32); --line-2:rgba(120,86,40,.16);
+    background:linear-gradient(180deg,#f5edde,#efe5d2);
+    color:var(--ink);
+    border-top-color:rgba(120,86,40,.28);
+    box-shadow:none;
+  }
+  .sec.light h1,.sec.light h2,.sec.light h3,.sec.light h4{color:var(--ink)}
+  .sec.light::before{background:linear-gradient(90deg,transparent,rgba(120,86,40,.55),transparent)}
+  .sec.light .card,.sec.light .svc,.sec.light .plan,.sec.light .sub,.sec.light .stat,.sec.light .principle,.sec.light details{box-shadow:0 14px 34px rgba(90,55,20,.09)}
+  .sec.light .svc.hot,.sec.light .sub.hot,.sec.light .plan.featured{border-color:rgba(169,120,47,.55)}
+  .sec.light .card .ic{background:radial-gradient(circle at 50% 40%,rgba(169,120,47,.15),rgba(169,120,47,.03))}
+  .sec.light .about .photo>img{border-color:rgba(120,86,40,.35)}
   .sec h2{font-size:clamp(34px,6.6vw,50px);text-align:center;letter-spacing:.1em;text-transform:uppercase;line-height:1.1}
   .sec h2 + .lead-sub{text-align:center;color:var(--muted);max-width:580px;margin:16px auto 0;font-size:18px;font-weight:400}
   .divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto 0}
@@ -248,7 +263,7 @@
 </header>
 
 <!-- ==================== INTRO ==================== -->
-<section class="sec">
+<section class="sec light">
   <div class="wrap narrow">
     <span class="eyebrow">Честно о том, как я работаю</span>
     <h2>Таро — это не про страх</h2>
@@ -282,7 +297,7 @@
 </section>
 
 <!-- ==================== SERVICES ==================== -->
-<section class="sec" id="packages">
+<section class="sec light" id="packages">
   <div class="wrap">
     <span class="eyebrow">Услуги</span>
     <h2>Выбери, что тебе нужно</h2>
@@ -444,7 +459,7 @@
 </section>
 
 <!-- ==================== ABOUT ==================== -->
-<section class="sec" id="about">
+<section class="sec light" id="about">
   <div class="wrap about">
     <div class="photo">
       <img src="assets/me.jpg" alt="Никита — таролог" style="object-position:50% 24%" loading="lazy">
@@ -483,7 +498,7 @@
 </section>
 
 <!-- ==================== HOW ==================== -->
-<section class="sec" id="how">
+<section class="sec light" id="how">
   <div class="wrap">
     <span class="eyebrow">Как это устроено</span>
     <h2>Как проходит расклад</h2>
@@ -517,7 +532,7 @@
 </section>
 
 <!-- ==================== FAQ ==================== -->
-<section class="sec">
+<section class="sec light">
   <div class="wrap">
     <span class="eyebrow">Вопросы</span>
     <h2>Частые вопросы</h2>
