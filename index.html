@@ -105,6 +105,8 @@
   .intro-txt{max-width:720px;margin:30px auto 0;text-align:center;color:var(--ink);font-weight:400;font-style:italic;font-size:clamp(21px,3.8vw,27px);line-height:1.55}
   .intro-txt em{color:var(--gold);font-style:italic}
   .intro-sign{margin-top:22px;text-align:center;color:var(--muted-2);font-size:16px;letter-spacing:.02em}
+  .intro-photo{max-width:300px;margin:42px auto 0;border-radius:16px;overflow:hidden;border:1px solid rgba(120,86,40,.3);box-shadow:0 20px 44px rgba(90,55,20,.16)}
+  .intro-photo img{width:100%;display:block}
 
   /* HELP */
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
@@ -124,6 +126,10 @@
   .band .q em{color:#8a5d27;font-style:italic}
   .band p{color:#6b4a1e;margin-top:18px;font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
   .band2::before{background-image:url('assets/w-fan.jpg')}
+  /* полноширинные фото-полосы (визуальные передышки) */
+  .imgstrip{height:44vh;min-height:320px;background-position:center;background-size:cover;background-repeat:no-repeat;border-top:1px solid rgba(120,86,40,.28)}
+  .imgstrip.a{background-image:url('assets/w-hands.jpg')}
+  .imgstrip.b{background-image:url('assets/w-corner.jpg')}
 
   /* SERVICE TABS */
   .tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:44px}
@@ -275,6 +281,7 @@
     <div class="divider"></div>
     <p class="intro-txt">Я не гадаю на страхе и не обещаю магию по щелчку. Расклад — это способ <em>посмотреть на свою ситуацию со стороны</em>, назвать то, что ты и так чувствуешь, и увидеть варианты, которые из тревоги не разглядеть. Я помогаю вернуть ясность и опору — <em>а решения ты принимаешь сама</em></p>
     <p class="intro-sign">— и именно поэтому ко мне возвращаются</p>
+    <div class="intro-photo"><img src="assets/w-card.jpg" alt="карта Таро Звезда" loading="lazy"></div>
   </div>
 </section>
 
@@ -463,6 +470,9 @@
   </div>
 </section>
 
+<!-- фото-полоса -->
+<section class="imgstrip a"></section>
+
 <!-- ==================== ABOUT ==================== -->
 <section class="sec light" id="about">
   <div class="wrap about">
@@ -501,6 +511,9 @@
     </div>
   </div>
 </section>
+
+<!-- фото-полоса -->
+<section class="imgstrip b"></section>
 
 <!-- ==================== HOW ==================== -->
 <section class="sec light" id="how">
