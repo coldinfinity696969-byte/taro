@@ -1,0 +1,7 @@
+# внутренние файлы, не для публикации
+CONTENT-PLAN.md
+directions.html
+
+# тяжёлые исходники (сайт использует сжатые версии)
+assets/magnific_*
+assets/ChatGPT Image*
