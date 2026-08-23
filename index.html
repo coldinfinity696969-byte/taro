@@ -116,11 +116,14 @@
   .card p{color:var(--muted);font-size:15.5px;font-weight:400}
 
   /* ATMO band */
-  .band{display:flex;align-items:center;justify-content:center;text-align:center;padding:96px 24px;overflow:hidden;background:linear-gradient(180deg,#efe5d2,#f6eee0);border-top:1px solid rgba(120,86,40,.28)}
+  .band{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 24px;overflow:hidden;border-top:1px solid rgba(120,86,40,.28)}
+  .band::before{content:"";position:absolute;inset:0;background:url('assets/w-candle.jpg') center/cover no-repeat;z-index:0}
+  .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(243,235,220,.80),rgba(243,235,220,.62));z-index:1}
   .band .inner{position:relative;z-index:2;max-width:700px}
   .band .q{font-size:clamp(28px,5.4vw,42px);font-weight:500;font-style:italic;color:#2a2015;line-height:1.35}
-  .band .q em{color:#a9782f;font-style:italic}
-  .band p{color:#7a6748;margin-top:18px;font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+  .band .q em{color:#8a5d27;font-style:italic}
+  .band p{color:#6b4a1e;margin-top:18px;font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+  .band2::before{background-image:url('assets/w-fan.jpg')}
 
   /* SERVICE TABS */
   .tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:44px}
@@ -511,6 +514,14 @@
       <div class="step"><div class="n">3</div><h3>Разбор</h3><p>Присылаю голосом или текстом: что вижу, что делать и чего избегать</p></div>
       <div class="step"><div class="n">4</div><h3>Поддержка</h3><p>Остаюсь на связи по итогам расклада — уточнить и направить</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ==================== IMAGE BAND 2 ==================== -->
+<section class="band band2">
+  <div class="inner">
+    <div class="q">Каждый расклад это <em>разговор и опора</em>, а не приговор</div>
+    <p>Честно · Бережно · По-человечески</p>
   </div>
 </section>
 
