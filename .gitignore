@@ -1,7 +1,12 @@
 # внутренние файлы, не для публикации
 CONTENT-PLAN.md
+SMM-STRATEGY.md
+POSTS-week-1.md
+ПАНЕЛЬ-NOCTARO.md
 directions.html
+channel-styles.html
 
-# тяжёлые исходники (сайт использует сжатые версии)
+# тяжёлые исходники и черновики (сайт использует сжатые версии)
 assets/magnific_*
 assets/ChatGPT Image*
+assets/_demo_*
