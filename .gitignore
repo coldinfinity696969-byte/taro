@@ -2,9 +2,12 @@
 CONTENT-PLAN.md
 SMM-STRATEGY.md
 POSTS-week-1.md
+POSTS-extra.md
 ПАНЕЛЬ-NOCTARO.md
+БИБЛИОТЕКА-план.md
 directions.html
 channel-styles.html
+_lib/
 
 # тяжёлые исходники и черновики (сайт использует сжатые версии)
 assets/magnific_*
